@@ -11,6 +11,7 @@ reviews_data = amazon_df[['reviews.text']].head(500)
 reviews_data.isnull().sum() # checking for null values
 # function to extract tokens through lemmatization, and removing stop words and punctuation
 def preprocess(text):
+    '''function extracts tokens through lemmatization, and removing stop words and punctuation'''
     # converting text to lowercase, removing leading/ending whitespaces and putting through spacy NLP pipeline
     doc = nlp(text.lower().strip())
     # extracting tokens through lemmatization, and removing stop words, punctuation, numbers, single letters, and special characters
