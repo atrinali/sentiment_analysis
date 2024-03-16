@@ -1,7 +1,7 @@
 import spacy
 import pandas as pd
 
-nlp = spacy.load('en_core_web_sm') # loading small model
+nlp = spacy.load('en_core_web_md') # loading medium model
 
 amazon_df = pd.read_csv('amazon_product_reviews.csv')
 
